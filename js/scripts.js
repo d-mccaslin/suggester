@@ -22,8 +22,10 @@ $(document).ready(function() {
   // console.log("This is working.");
   $("form#survey").submit(function(event) {
     event.preventDefault();
-    const answer1 = $("input#question1").val();
-    const answer2 = $("input#question2").val();
+    const name = $("input#question1").val();
+    const language = $("input#question2").val();
     const answer3 = $("input#question3").val();
+    const season = $("input:radio[name=flavor]:checked");
+    console.log(season);
   })
 });
