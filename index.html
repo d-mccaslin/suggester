@@ -14,17 +14,42 @@
     <div class="group-std">
       <form id="survey">
         <div class="form-group">
-          <label for="question1">Question 1...</label>
+          <label for="question1">What is your name?</label>
           <input id="question1" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="question2">Question 2...</label>
-          <input id="question2" class="form-control" type="text">
+          <label for="question2">What time of programming are you intereted in?</label>
+          <select class="form-control" id="question2">
+            <option value="1">Web development</option>
+            <option value="2">Systems engineering</option>
+            <option value="3">Front-end/design</option>
+            <option value="4">Mobile</option>
+            <option value="5">Extr3m3 h4cking</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="question3">Question 3...</label>
           <input id="question3" class="form-control" type="text">
         </div>
+        <div class="form-group">
+          <label for="question4">Question 4...</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="vibe" value="one">  One
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="vibe" value="two">  Two
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="vibe" value="three">  Three
+            </label>
+          </div>
+        </div>
+      
         <button type="submit" class="btn-primary">SUBMIT</button>
       </form>
     </div>
