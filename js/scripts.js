@@ -1,35 +1,43 @@
 // Business logic
 
-function isWeb (answer1, answer2, answer3, answer4) {
+function isWeb (devType) {
   return true;
 }
 
-function isFrontEnd (answer1, answer2, answer3, answer4) {
+function isQuestion (question) {
   return true;
 }
 
-function isBackEnd (answer1, answer2, answer3, answer4) {
+function isHardcore (devType, season) {
   return true;
 }
 
-function isHardcore (answer1, answer2, answer4, answer4) {
+function isUpForIt (vibe, season) {
+  return true;
+}
+
+function isGoodNumber (number) {
   return true;
 }
 
 // User interface logic
 
 $(document).ready(function() {
-  // console.log("This is working.");
   $("form#survey").submit(function(event) {
     event.preventDefault();
     // Store form response
     const name = $("input#question1").val();
-    const devType = $("input#question2").val();
+    console.log(name);
+    const devType = $("#question2").val();
+    console.log(devType);
     const question = $("input#question3").val();
-    const season = $("input:radio[name=flavor]:checked").val();
+    console.log(question);
+    const season = $("input:radio[name=season]:checked").val();
     console.log(season);
-    const vibe = $("input#question5").val();
+    const vibe = $("#question5").val();
+    console.log(vibe);
     const number = $("input#question6").val();
+    console.log(number);
 
     // Calculate language
     const language = name;
@@ -45,8 +53,18 @@ $(document).ready(function() {
       $("#swift").show();
     }
     $(".languages").children().not("#" + language).hide();
-    
+
     // bonus to do: 1) update background color 2) show response history at bottom 3) include name in response
 
   })
 });
+
+// to do
+
+// readme
+// gh pages (optional)
+// require inputs?
+
+// reset button
+// p, h, ul, ol, li, em, strong, a, img, div, and span
+// floats + box model
