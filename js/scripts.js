@@ -51,26 +51,38 @@ $(document).ready(function() {
     event.preventDefault();
     // Store form response
     const name = $("input#question1").val();
-    console.log(name);
+    // console.log(name);
     const devType = $("#question2").val();
-    console.log(devType);
+    // console.log(devType);
     const question = $("input#question3").val();
-    console.log(question);
+    // console.log(question);
     const season = $("input:radio[name=season]:checked").val();
-    console.log(season);
+    // console.log(season);
     const vibe = $("#question5").val();
-    console.log(vibe);
+    // console.log(vibe);
     const number = $("input#question6").val();
-    console.log(number);
+    // console.log(number);
 
+    /*
     console.log(isWeb(devType));
     console.log(isQuestion(question));
     console.log(isHardcore(devType, season));
     console.log(isUpForIt(vibe, season));
     console.log(isGoodNumber(number));
+    */
 
     // Calculate language
-    const language = name;
+    let language;
+    if (isWeb(devType)) {
+      language = "ruby";
+    } else if (isHardcore(devType, season)) {
+      language = "python";
+    } else if (isUpForIt(vibe, season) && isGoodNumber) {
+      language = "swift";
+    } else {
+      language = "rust";
+    } 
+    // console.log(language);
 
     // Show response (Ruby / Python / Rust / Swift)
     if (language === "ruby") {
@@ -83,18 +95,5 @@ $(document).ready(function() {
       $("#swift").show();
     }
     $(".languages").children().not("#" + language).hide();
-
-    // bonus to do: 1) update background color 2) show response history at bottom 3) include name in response
-
   })
 });
-
-// to do
-
-// readme
-// gh pages (optional)
-// require inputs?
-
-// reset button
-// p, h, ul, ol, li, em, strong, a, img, div, and span
-// floats + box model
