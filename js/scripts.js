@@ -25,14 +25,14 @@ $(document).ready(function() {
     // Store form response
     const name = $("input#question1").val();
     const devType = $("input#question2").val();
-    const answer3 = $("input#question3").val();
+    const question = $("input#question3").val();
     const season = $("input:radio[name=flavor]:checked").val();
     console.log(season);
     const vibe = $("input#question5").val();
     const number = $("input#question6").val();
 
     // Calculate language
-    const language = "python";
+    const language = name;
 
     // Show response (Ruby / Python / Rust / Swift)
     if (language === "ruby") {
@@ -44,7 +44,9 @@ $(document).ready(function() {
     } else {
       $("#swift").show();
     }
-
+    $(".languages").children().not("#" + language).hide();
+    
+    // bonus to do: 1) update background color 2) show response history at bottom 3) include name in response
 
   })
 });
