@@ -12,6 +12,10 @@ function isBackEnd (answer1, answer2, answer3, answer4) {
   return true;
 }
 
+function isHardcore (answer1, answer2, answer4, answer4) {
+  return true;
+}
+
 // User interface logic
 
 $(document).ready(function() {
