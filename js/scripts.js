@@ -1,5 +1,16 @@
 // Business logic
 
+function isWeb (answer1, answer2, answer3, answer4) {
+  return true;
+}
+
+function isFrontEnd (answer1, answer2, answer3, answer4) {
+  return true;
+}
+
+function isBackEnd (answer1, answer2, answer3, answer4) {
+  return true;
+}
 
 // User interface logic
 
