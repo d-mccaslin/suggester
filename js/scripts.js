@@ -22,10 +22,29 @@ $(document).ready(function() {
   // console.log("This is working.");
   $("form#survey").submit(function(event) {
     event.preventDefault();
+    // Store form response
     const name = $("input#question1").val();
-    const language = $("input#question2").val();
+    const devType = $("input#question2").val();
     const answer3 = $("input#question3").val();
-    const season = $("input:radio[name=flavor]:checked");
+    const season = $("input:radio[name=flavor]:checked").val();
     console.log(season);
+    const vibe = $("input#question5").val();
+    const number = $("input#question6").val();
+
+    // Calculate language
+    const language = "python";
+
+    // Show response (Ruby / Python / Rust / Swift)
+    if (language === "ruby") {
+      $("#ruby").show();
+    } else if (language === "python") {
+      $("#python").show();
+    } else if (language === "rust") {
+      $("#rust").show();
+    } else {
+      $("#swift").show();
+    }
+
+
   })
 });
