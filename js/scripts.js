@@ -1,23 +1,47 @@
 // Business logic
 
 function isWeb (devType) {
-  return true;
+  if (devType === "web" || devType === "frontend") {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function isQuestion (question) {
-  return true;
+  return question.includes("?");
 }
 
 function isHardcore (devType, season) {
-  return true;
+  if (devType === "systems" || devType === "hacking") {
+    if (season !== "summer" && season !== "spring") {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
 }
 
 function isUpForIt (vibe, season) {
-  return true;
+  if (vibe === "energetic" || vibe === "adventurous" || vibe === "spirited") {
+    if (season !== "winter") {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
 }
 
 function isGoodNumber (number) {
-  return true;
+  if (number >= 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // User interface logic
@@ -38,6 +62,12 @@ $(document).ready(function() {
     console.log(vibe);
     const number = $("input#question6").val();
     console.log(number);
+
+    console.log(isWeb(devType));
+    console.log(isQuestion(question));
+    console.log(isHardcore(devType, season));
+    console.log(isUpForIt(vibe, season));
+    console.log(isGoodNumber(number));
 
     // Calculate language
     const language = name;
