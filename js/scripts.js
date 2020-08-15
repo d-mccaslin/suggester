@@ -8,7 +8,7 @@ function isWeb (devType) {
   }
 }
 
-function isQuestion (question) {
+function asksGoodQuestions (question) {
   return question.includes("?");
 }
 
@@ -37,7 +37,7 @@ function isUpForIt (vibe, season) {
 }
 
 function isGoodNumber (number) {
-  if (number >= 0) {
+  if (number > 0) {
     return true;
   } else {
     return false;
@@ -51,38 +51,23 @@ $(document).ready(function() {
     event.preventDefault();
     // Store form response
     const name = $("input#question1").val();
-    // console.log(name);
     const devType = $("#question2").val();
-    // console.log(devType);
     const question = $("input#question3").val();
-    // console.log(question);
     const season = $("input:radio[name=season]:checked").val();
-    // console.log(season);
     const vibe = $("#question5").val();
-    // console.log(vibe);
     const number = $("input#question6").val();
-    // console.log(number);
-
-    /*
-    console.log(isWeb(devType));
-    console.log(isQuestion(question));
-    console.log(isHardcore(devType, season));
-    console.log(isUpForIt(vibe, season));
-    console.log(isGoodNumber(number));
-    */
 
     // Calculate language
     let language;
     if (isWeb(devType)) {
       language = "ruby";
-    } else if (isHardcore(devType, season)) {
+    } else if (isHardcore(devType, season) && asksGoodQuestions(question)) {
       language = "python";
-    } else if (isUpForIt(vibe, season) && isGoodNumber) {
+    } else if (isUpForIt(vibe, season) && isGoodNumber(number)) {
       language = "swift";
     } else {
       language = "rust";
     } 
-    // console.log(language);
 
     // Show response (Ruby / Python / Rust / Swift)
     if (language === "ruby") {
