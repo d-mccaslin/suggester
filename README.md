@@ -6,32 +6,31 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This application takes user input from a form and calculates a response using various logic. This response is displayed in a group on the webpage with each response being different based on the user's answers. The application emphasizes the use of branching logic and is supported by Bootstrap and jQuery.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* Find repository on GitHub
+* Clone, fork, or otherwise download the project
+* Run the project through a local server or live server (or simply drag the html into the browser if files are stored locally)
+* The recommended editor for viewing the application is Visual Studio Code
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+There are no known bugs. The application is optimzed for a desktop and is not guaranteed to be fully viewable on all devices.
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Contact: davidmccaslin94@gmail.com
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* Languages: HTML, CSS, JavaScript
+* Libraries: Bootstrap, jQuery
+* Development Tools: Visual Studio Code, Git, GitHub
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+MIT Open Source
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 David McCaslin
