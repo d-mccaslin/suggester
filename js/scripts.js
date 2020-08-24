@@ -85,5 +85,10 @@ $(document).ready(function() {
       $("#swift").show();
     }
     $(".languages").children().not("#" + language).hide();
+    if (language) {
+      $("#history").show();
+      $("ul#languages").prepend("<li>" + language + " </li>");
+    }
+
   })
 });
