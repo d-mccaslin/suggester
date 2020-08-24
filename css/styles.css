@@ -21,3 +21,19 @@ h2 {
 #ruby, #python, #rust, #swift, #history {
   display:  none;
 }
+
+.ruby {
+  background-color: #CC342D;
+}
+
+.python {
+  background-color: #003F72;
+}
+
+.rust {
+  background-color: #2A3439;
+}
+
+.swift {
+  background-color: #F05138;
+}

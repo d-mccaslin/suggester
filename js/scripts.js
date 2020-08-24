@@ -85,6 +85,14 @@ $(document).ready(function() {
       $("#swift").show();
     }
     $(".languages").children().not("#" + language).hide();
+
+    // Add styling classes
+    if (language) {
+      $("body").removeClass();
+      $("body").addClass(language);
+    }
+
+    // Populate response history
     if (language) {
       $("#history").show();
       $("ul#languages").prepend("<li>" + language + " </li>");
