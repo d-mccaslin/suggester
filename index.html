@@ -11,97 +11,103 @@
   <div class="container">
     <h1>Programming Language Survey</h1>
     <div class="row">
-      <!-- Results -->
-      <div class="languages">
-        <div id="ruby" class="group-std">
-          <h3>Ruby</h3>
-          <p><span id="name"></span>You've chosen Ruby!</p>
-        </div>
-        <div id="python" class="group-std">
-          <h3>Python</h3>
-          <p><span id="name"></span>You've chosen Python!</p>
-        </div>
-        <div id="rust" class="group-std">
-          <h3>Rust</h3>
-          <p><span id="name"></span>You've chosen Rust!</p>
-        </div>
-        <div id="swift" class="group-std">
-          <h3>Swift</h3>
-          <p><span id="name"></span>You've chosen Swift!</p>
+      <div class="col-md-12">
+        <!-- Results -->
+        <div class="languages">
+          <div id="ruby" class="group-std">
+            <h3>Ruby</h3>
+            <p><span id="name"></span>You've chosen Ruby!</p>
+          </div>
+          <div id="python" class="group-std">
+            <h3>Python</h3>
+            <p><span id="name"></span>You've chosen Python!</p>
+          </div>
+          <div id="rust" class="group-std">
+            <h3>Rust</h3>
+            <p><span id="name"></span>You've chosen Rust!</p>
+          </div>
+          <div id="swift" class="group-std">
+            <h3>Swift</h3>
+            <p><span id="name"></span>You've chosen Swift!</p>
+          </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <!-- Form -->
-      <div class="group-std">
-        <h2>Survey</h2>
-        <form id="survey">
-          <div class="form-group">
-            <label for="question1">What is your name?</label>
-            <input id="question1" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="question2">What type of programming are you interested in?</label>
-            <select class="form-control" id="question2">
-              <option value="web">Web development</option>
-              <option value="systems">Systems engineering</option>
-              <option value="frontend">Front-end/design</option>
-              <option value="mobile">Mobile</option>
-              <option value="hacking">Hacking</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="question3">Ask any question you can think of</label>
-            <input id="question3" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="question4">Pick a season</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="season" value="fall">  Fall
-              </label>
+      <div class="col-md-12">
+        <!-- Form -->
+        <div class="group-std">
+          <h2>Survey</h2>
+          <form id="survey">
+            <div class="form-group">
+              <label for="question1">What is your name?</label>
+              <input id="question1" class="form-control" type="text">
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="season" value="winter">  Winter
-              </label>
+            <div class="form-group">
+              <label for="question2">What type of programming are you interested in?</label>
+              <select class="form-control" id="question2">
+                <option value="web">Web development</option>
+                <option value="systems">Systems engineering</option>
+                <option value="frontend">Front-end/design</option>
+                <option value="mobile">Mobile</option>
+                <option value="hacking">Hacking</option>
+              </select>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="season" value="spring">  Spring
-              </label>
+            <div class="form-group">
+              <label for="question3">Ask any question you can think of</label>
+              <input id="question3" class="form-control" type="text">
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="season" value="summer">  Summer
-              </label>
+            <div class="form-group">
+              <label for="question4">Pick a season</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="season" value="fall">  Fall
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="season" value="winter">  Winter
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="season" value="spring">  Spring
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="season" value="summer">  Summer
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="question5">What vibe are you feeling?</label>
-            <select class="form-control" id="question5">
-              <option value="energetic">Energetic</option>
-              <option value="mellow">Mellow</option>
-              <option value="adventurous">Adventurous</option>
-              <option value="spirited">Spirited</option>
-              <option value="unclear">Unclear</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="question6">Enter a number</label>
-            <input id="question6" class="form-control" type="number">
-          </div>
-          <button type="submit" class="btn btn-primary">SUBMIT</button>
-          <button type="reset" class="btn btn-danger">RESET</button>
-        </form>
+            <div class="form-group">
+              <label for="question5">What vibe are you feeling?</label>
+              <select class="form-control" id="question5">
+                <option value="energetic">Energetic</option>
+                <option value="mellow">Mellow</option>
+                <option value="adventurous">Adventurous</option>
+                <option value="spirited">Spirited</option>
+                <option value="unclear">Unclear</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="question6">Enter a number</label>
+              <input id="question6" class="form-control" type="number">
+            </div>
+            <button type="submit" class="btn btn-primary">SUBMIT</button>
+            <button type="reset" id="resetForm" class="btn btn-danger">RESET</button>
+          </form>
+        </div>
       </div>
     </div>
     <div class="row">
-      <!-- Results History -->
-      <div id="history" class="group-std">
-        <h3>Results history</h3>
-        <p>You've chosen the following languages:</p>
-        <ul id="languages"></ul>
+      <div class="col-md-12">
+        <!-- Results History -->
+        <div id="history" class="group-std">
+          <h3>Results history</h3>
+          <p>You've chosen the following languages:</p>
+          <ul id="languages"></ul>
+        </div>
       </div>
     </div>
   </div>

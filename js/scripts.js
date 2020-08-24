@@ -97,6 +97,8 @@ $(document).ready(function() {
       $("#history").show();
       $("ul#languages").prepend("<li>" + language + " </li>");
     }
-
+  })
+  $("#resetForm").click(function() {
+    $("body").removeClass();
   })
 });
