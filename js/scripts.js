@@ -57,6 +57,11 @@ $(document).ready(function() {
     const vibe = $("#question5").val();
     const number = $("input#question6").val();
 
+    // Populate name
+    if (name) {
+      $("#name").text(name + ", ");
+    }
+
     // Calculate language
     let language;
     if (isWeb(devType)) {
